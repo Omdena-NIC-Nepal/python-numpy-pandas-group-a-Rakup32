@@ -33,7 +33,6 @@ jobs:
       - name: Install dependencies
         run: |
               pip install --upgrade pip
-              pip install -r requirements.txt  # If you use a requirements.txt
               pip install ipython  # Explicitly install IPython
 
       - name: Run Tests
