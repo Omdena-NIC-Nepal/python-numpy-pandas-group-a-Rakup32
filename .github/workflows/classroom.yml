@@ -30,6 +30,10 @@ jobs:
 
       - name: Convert Notebook to Python
         run: jupyter nbconvert --to script assignment.ipynb
+      - name: Install dependencies
+        run: |
+              pip install --upgrade pip
+              pip install ipython  # Explicitly install IPython
 
       - name: Run Tests
         run: pytest test_assignment.py
